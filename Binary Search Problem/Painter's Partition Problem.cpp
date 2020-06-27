@@ -25,11 +25,9 @@ int Solution::paint(int A, int B, vector<int> &C) {
     long long int low=0,high=sum*B;
     long long int ans=high%10000003;
     while(low<=high){
-        //cout<<low<<" "<<high<<" "<<ans<<endl;
         long long int mid=low+(high-low)/2;
         if(isPossible(A,B,C,mid/B)){
-           // cout<<"Hi\n";
-            ans=mid%10000003;
+           ans=mid%10000003;
             high=mid-1;
         }
         else low=mid+1;
