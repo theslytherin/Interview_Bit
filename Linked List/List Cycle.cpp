@@ -3,7 +3,7 @@ ListNode* Solution::detectCycle(ListNode* A) {
         return NULL;
     ListNode* slow, *fast;     
     slow = fast = A;
-    while (fast)    //if you give condn slow!=fast; it's wrong since slow=fast=A initially.
+    while (fast)    
     {
         if (!fast->next || !fast->next->next)
             return NULL;
