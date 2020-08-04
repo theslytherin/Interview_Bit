@@ -4,11 +4,9 @@ vector<int> Solution::plusOne(vector<int> &A) {
     A[n]=sum%10;
     int carry=sum/10;
     for(int i=n-1;i>=0;i--)
-    {
-        int sum=A[i]+carry;
+    {int sum=A[i]+carry;
         A[i]=sum%10;
-        carry=sum/10;
-    }
+        carry=sum/10;}
     vector<int> B;
     if(carry==1)
     {
